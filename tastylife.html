@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Tasty Life - Shazaan Khan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial;background:#fff8ee;}
+header{background:#ff6b35;color:white;text-align:center;padding:20px;}
+header h1{margin:0;font-size:38px;}
+nav{background:#222;text-align:center;padding:12px;}
+nav button{background:none;border:none;color:white;font-weight:bold;margin:5px;cursor:pointer;font-size:14px;}
+nav button:hover{color:#ffcc00;}
+.page{display:none;padding:20px;}
+.page.active{display:block;}
+.box{background:white;border:2px solid #ff6b35;border-radius:10px;padding:20px;margin:15px;}
+.box h2{color:#ff6b35;}
+table{width:100%;border-collapse:collapse;}
+td,th{border:1px solid #ccc;padding:10px;text-align:center;}
+th{background:#ff6b35;color:white;}
+.btn{background:#ff6b35;color:white;border:none;padding:12px 25px;border-radius:8px;font-size:16px;cursor:pointer;}
+footer{background:#222;color:white;text-align:center;padding:15px;}
+input,textarea{width:90%;padding:10px;margin:8px;border:1px solid #ccc;border-radius:8px;}
+</style>
+<script>
+function show(id){
+var p=document.querySelectorAll('.page');
+for(var i=0;i<p.length;i++){p[i].classList.remove('active');}
+document.getElementById(id).classList.add('active');
+window.scrollTo(0,0);
+}
+</script>
+</head>
+<body>
+
+<header><h1>??? TASTY LIFE</h1><p>Healthy Food, Happy Life | Shazaan Khan - X B - Roll No. 39</p></header>
+
+<nav>
+<button onclick="show('home')">Home</button>
+<button onclick="show('about')">About Food</button>
+<button onclick="show('benefits')">Fayde</button>
+<button onclick="show('nuksaan')">Nuksaan</button>
+<button onclick="show('facilities')">Facilities</button>
+<button onclick="show('growing')">Growing</button>
+<button onclick="show('importance')">Importance</button>
+<button onclick="show('comparison')">Comparison</button>
+<button onclick="show('recipes')">Recipes</button>
+<button onclick="show('contact')">Contact</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page active">
+<div class="box"><h2>Welcome To Tasty Life!</h2><p>Khana sirf pet bharne ke liye nahi, sehat banane ke liye hota hai. Is website me hum seekhenge Healthy Food, Junk Food, Growing, Facilities aur Recipes ke baare me.</p><button class="btn" onclick="show('about')">Start Karo ??</button></div>
+<div class="box"><h2>?? Aaj Ka Healthy Tip</h2><p>Roz 8 glass paani piyo aur Junk Food se door raho.</p></div>
+<div class="box"><h2>?? Is Website Me Kya Hai?</h2><p>? About Food ? Fayde ? Nuksaan ? Facilities ? Growing ? Importance ? 10 Saal Comparison ? Recipes ? Contact</p></div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page">
+<div class="box"><h2>?? Food Kya Hai?</h2><p>Food wo cheez hai jo hame energy, taakat aur growth deti hai. Bina khane ke hum zinda nahi reh sakte.</p><p><b>Food ke 3 Main Kaam:</b><br>1. Energy Dena<br>2. Body Banana<br>3. Bimari Se Bachana</p></div>
+<div class="box"><h2>??? Food Ke Types</h2><table><tr><th>Type</th><th>Example</th></tr><tr><td>Healthy Food</td><td>Dal, Roti, Sabzi, Fruits, Doodh</td></tr><tr><td>Junk Food</td><td>Pizza, Burger, Chips, Cold Drink</td></tr><tr><td>Protein Food</td><td>Anda, Paneer, Dal, Chicken</td></tr><tr><td>Energy Food</td><td>Chawal, Aloo, Roti</td></tr></table></div>
+</div>
+
+<!-- BENEFITS -->
+<div id="benefits" class="page">
+<div class="box"><h2>? Healthy Food Ke Fayde</h2><ul><li><b>Strong Body:</b> Haddiya aur muscles strong hote hai.</li><li><b>Tez Dimag:</b> Padhai me man lagta hai.</li><li><b>Acchi Skin:</b> Chehra saaf aur chamakdar.</li><li><b>Kam Bimari:</b> Sardi, bukhar kam hota hai.</li><li><b>Acchi Neend:</b> Raat ko achhi neend aati hai.</li></ul></div>
+<div class="box"><h2>?? Top 5 Superfoods</h2><p>1. Palak 2. Kela 3. Anda 4. Badam 5. Doodh</p></div>
+</div>
+
+<!-- NUKSAAN -->
+<div id="nuksaan" class="page">
+<div class="box"><h2>? Junk Food Ke Nuksaan</h2><ul><li>Motaapa badhta hai</li><li>Daant kharab hote hai</li><li>Pet kharab rehta hai</li><li>Dimag slow hota hai</li><li>Sugar aur BP ki bimari</li></ul></div>
+<div class="box"><h2>?? 1 Burger = ?</h2><p>1 Burger me itni calories hoti hai jitni 3 roti + dal me hoti hai, par nutrition zero hota hai.</p></div>
+</div>
+
+<!-- FACILITIES -->
+<div id="facilities" class="page">
+<div class="box"><h2>?? School Me Facilities</h2><ul><li>Mid Day Meal - Free khana</li><li>Canteen - Saaf khana</li><li>Clean Water - Saaf paani</li><li>Tiffin Time - Aaram se khane ka time</li></ul></div>
+<div class="box"><h2>?? Facilities Table</h2><table><tr><th>Jagah</th><th>Facility</th></tr><tr><td>Ghar</td><td>Maa ke haath ka khana</td></tr><tr><td>Restaurant</td><td>Menu, Waiter</td></tr><tr><td>Hospital</td><td>Special Diet</td></tr><tr><td>Online</td><td>Zomato, Swiggy</td></tr><tr><td>Govt.</td><td>Ration, Anganwadi</td></tr></table></div>
+</div>
+
+<!-- GROWING -->
+<div id="growing" class="page">
+<div class="box"><h2>?? Khet Se Plate Tak</h2><p>1. Beej Bona ? 2. Paani Dena ? 3. Dhoop ? 4. Khad ? 5. Fasal Kaatna ? 6. Mandi ? Ghar</p><p><b>Kisan ka samman karo, kyunki wo hai to khana hai.</b></p></div>
+<div class="box"><h2>?? Kya Kahan Ugta Hai?</h2><table><tr><th>Food</th><th>Kahan</th></tr><tr><td>Gehu/Chawal</td><td>Khet me</td></tr><tr><td>Aloo/Pyaaz</td><td>Zameen ke andar</td></tr><tr><td>Aam/Kela</td><td>Ped par</td></tr></table></div>
+</div>
+
+<!-- IMPORTANCE -->
+<div id="importance" class="page">
+<div class="box"><h2>? Food Itna Important Kyu Hai?</h2><ol><li>Zinda rehne ke liye</li><li>Padhai ke liye</li><li>Khelne ke liye</li><li>Bade hone ke liye</li><li>Bimari se ladne ke liye</li></ol><p><b>"Anaj hai to Jaan hai"</b></p></div>
+<div class="box"><h2>?? Food Ki Izzat Karo</h2><p>Khana kabhi barbaad mat karo. Duniya me bahut bachhe bhookhe sote hai.</p></div>
+</div>
+
+<!-- COMPARISON -->
+<div id="comparison" class="page">
+<div class="box"><h2>?? 2016 vs 2026</h2><table><tr><th>Cheez</th><th>2016</th><th>2026</th></tr><tr><td>Ghar Ka Khana</td><td>90% Log</td><td>60% Log</td></tr><tr><td>Online Food</td><td>Bahut Kam</td><td>Roz Order</td></tr><tr><td>Junk Food</td><td>Kabhi-Kabhi</td><td>Hafte me 3-4 Baar</td></tr><tr><td>Thali</td><td>40-50 Rs</td><td>100-150 Rs</td></tr></table></div>
+<div class="box"><h2>?? Conclusion</h2><p>Pehle ka khana simple aur healthy tha, ab ka khana tasty par zyada tel wala hai. Hame purani achhi aadat wapas laani chahiye.</p></div>
+</div>
+
+<!-- RECIPES -->
+<div id="recipes" class="page">
+<div class="box"><h2>?? Healthy Salad</h2><p>Kheera, Tamatar, Pyaaz kaato, Nimbu + Namak dalo. 5 min me ready!</p></div>
+<div class="box"><h2>?? Banana Shake</h2><p>2 Kela + 1 Glass Doodh + Shahad = Mixer me pees lo.</p></div>
+<div class="box"><h2>?? Paneer Sandwich</h2><p>Bread par chutney, paneer, tamatar rakho, tawa par sek lo.</p></div>
+<div class="box"><h2>?? Roz Ke Rules</h2><p>Subah: Paani + Nashta | Dopahar: Dal Roti + Salad | Raat: Halka Khana | Roz: 8 Glass Paani</p></div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+<div class="box"><h2>?? CONCLUSION</h2><p>Healthy Food hamari sehat ke liye sabse zaroori hai. Junk food se door raho, ghar ka khana khao. <b>Eat Healthy, Live Happy!</b></p></div>
+<div class="box"><h2>????? Made By</h2><p><b>Name :- Shazaan Khan</b><br><b>Roll No. :- 39</b><br><b>Class & Sec :- X B</b><br><b>Subject :- Computer Applications</b></p></div>
+<div class="box"><h2>?? Contact Form</h2><input type="text" placeholder="Apna Naam Likho"><br><input type="text" placeholder="Apni Class Likho"><br><textarea placeholder="Apna Message Likho"></textarea><br><button class="btn" onclick="alert('Thank You! Message Mil Gaya.')">Send</button></div>
+</div>
+
+<footer>© 2026 Tasty Life | Made by Shazaan Khan | Class X B | Roll No. 39</footer>
+</body>
+</html>
